@@ -1,3 +1,15 @@
+from bs4 import BeautifulSoup
+import youtube_dl
+import requests
+from functools import reduce
+import random
+import pafy 
+import random
+import os 
+from aubio import source, onset
+from moviepy import editor
+
+
 class VideoGenerator:
     def __init__(self, 
                  audio_file = '', 

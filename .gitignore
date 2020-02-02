@@ -1,4 +1,5 @@
 .ipynb_checkpoints
 outputs/
+__pycache__
 *.mp4
 *.mp3
