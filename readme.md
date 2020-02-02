@@ -1,4 +1,5 @@
 ## Generate Music Videos For Great Fun!
+* Scrapes youtube for videos and then stiches them together at random onsets in the song.
 * Original code and concept by [kihs](https://github.com/kihs)
 
 ### Comand Line Arguments
@@ -20,6 +21,8 @@
 
 ### Example Run 
 ```
-python VideoGeneratorDriver.py  --audio_file "gangsta.mp3" --output_file "vibez.mp4" --search_terms_input "search.txt"
+python VideoGeneratorDriver.py  --audio_file "gangsta.mp3" 
+                                --output_file "vibez.mp4" 
+                                --search_terms_input "search.txt"
 ```
 
