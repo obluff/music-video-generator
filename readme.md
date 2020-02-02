@@ -19,5 +19,7 @@
 ```
 
 ### Example Run 
+```
 python VideoGeneratorDriver.py  --audio_file "killers.mp3" --output_file "cool.mp4" --search_terms_input "search.txt"
+```
 
