@@ -1,5 +1,5 @@
 ## Generate Music Videos For Great Fun!
-* Original code and concept by Andrew Kihs
+* Original code and concept by (kihs)[https://github.com/kihs]
 
 ### Comand Line Arguments
 ```
