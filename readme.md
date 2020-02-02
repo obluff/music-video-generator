@@ -1,4 +1,4 @@
-## Generate Music Videos For Fun and Vibes!
+## Generate Music Videos For Great Fun!
 * Original code and concept by Andrew Kihs
 
 ### Comand Line Arguments
@@ -20,6 +20,6 @@
 
 ### Example Run 
 ```
-python VideoGeneratorDriver.py  --audio_file "killers.mp3" --output_file "cool.mp4" --search_terms_input "search.txt"
+python VideoGeneratorDriver.py  --audio_file "gangsta.mp3" --output_file "vibez.mp4" --search_terms_input "search.txt"
 ```
 
