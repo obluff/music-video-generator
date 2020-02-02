@@ -19,7 +19,7 @@
   --num_vids NUM_VIDS   number of videos to download
 ```
 
-### Example Run 
+### Example 
 ```
 python VideoGeneratorDriver.py  --audio_file "gangsta.mp3" 
                                 --output_file "vibez.mp4" 
