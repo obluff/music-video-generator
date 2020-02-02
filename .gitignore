@@ -1,1 +1,4 @@
 .ipynb_checkpoints
+outputs/
+*.mp4
+*.mp3
