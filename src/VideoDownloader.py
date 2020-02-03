@@ -24,7 +24,6 @@ class VideoDownloader:
         random.shuffle(self.search_terms)
         all_options = [self.collect_videos(x) for x in self.search_terms[:4]]
         list_of_links = reduce(lambda x, y: x + y, all_options)
-        print(list_of_links)
         if len(list_of_links) > self.num_vids:
             random.shuffle(list_of_links)
             list_of_links = list_of_links[:self.num_vids]
@@ -47,18 +46,16 @@ class VideoDownloader:
         list_of_links = self.video_links_from_search_request(video_request)
         collected_vids = [x for x in list_of_links if self.filter_out_long_vids(x)]
         return collected_vids
-        
     
     def filter_out_long_vids(self, link):
         try:  
-            return pafy.new(link).length < 3600
+            return pafy.new(link).length < self.max_length 
         except:
             return False
             
     def video_links_from_search_request(self, html):
         soup = BeautifulSoup(html, "html.parser")
         vids = soup.findAll('a',attrs={'class':'yt-uix-tile-link'})
-        vids = filter(lambda x: 'channel' not in x, vids)
         return [''.join(['http://youtube.com', x['href']]) for x in vids]
     
     def get_video_request(self, search_term):

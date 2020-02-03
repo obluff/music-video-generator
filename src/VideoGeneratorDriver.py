@@ -1,20 +1,21 @@
-from bs4 import BeautifulSoup
-import youtube_dl
-import requests
-from functools import reduce
-import random
-import pafy
-import random
-import os
-from aubio import source, onset
-from moviepy import editor
+#from bs4 import BeautifulSoup
+#import youtube_dl
+#import requests
+#from functools import reduce
+#import random
+#import pafy
+#import random
+#import os
+#from aubio import source, onset
+#from moviepy import editor
 
 
 from VideoDownloader import VideoDownloader
 from VideoGenerator import VideoGenerator
-
 import argparse
 
+import sys
+sys.path.append('..')
 
 
 parser = argparse.ArgumentParser(description="parameters to pass into the music video generator")
