@@ -21,7 +21,7 @@
 
 ### Example 
 ```
-python src/VideoGeneratorDriver.py  --audio_file "gangsta.mp3" 
+python src/VideoGeneratorDriver.py  --audio_file "cool_beats.mp3" 
                                     --output_file "vibez.mp4" 
                                     --search_terms_input "search.txt"
 ```
